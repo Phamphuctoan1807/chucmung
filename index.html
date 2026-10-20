@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Món Quà Nhỏ Gửi Các Chị Yêu Quý Của Em! 🌷✨</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF6F0',
+                        peach: '#F7E4D8',
+                        blush: '#E8B4A2',
+                        terracotta: '#D48472',
+                        deepRose: '#B86452',
+                        cocoa: '#5A3E38',
+                        softCocoa: '#84625A',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Be Vietnam Pro"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg-cream: #FDF6F0;
+            --bg-peach: #F7E4D8;
+            --blush: #E8B4A2;
+            --terracotta: #D48472;
+            --cocoa: #5A3E38;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        body {
+            background: radial-gradient(circle at top left, #FDF6F0 0%, #F7E4D8 55%, #F2D6C5 100%);
+            color: var(--cocoa);
+            font-family: 'Be Vietnam Pro', sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Glassmorphism Cards with 20px-28px rounded edges */
+        .glass-card {
+            background: rgba(253, 246, 240, 0.82);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1.5px solid rgba(255, 255, 255, 0.88);
+            box-shadow: 0 18px 40px -12px rgba(212, 132, 114, 0.22),
+                        0 4px 16px -4px rgba(90, 62, 56, 0.06);
+            border-radius: 26px;
+        }
+
+        .glass-pill {
+            background: rgba(253, 246, 240, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(232, 180, 162, 0.55);
+            box-shadow: 0 8px 24px -6px rgba(212, 132, 114, 0.25);
+            border-radius: 22px;
+        }
+
+        /* Warm Peach & Blush Buttons */
+        .btn-romantic {
+            background: linear-gradient(135deg, #E8B4A2 0%, #D48472 100%);
+            color: #FDF6F0;
+            box-shadow: 0 10px 25px -5px rgba(212, 132, 114, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.45);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-radius: 20px;
+        }
+
+        .btn-romantic:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 30px -5px rgba(212, 132, 114, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-romantic:active {
+            transform: translateY(1px) scale(0.98);
+        }
+
+        .btn-soft {
+            background: rgba(253, 246, 240, 0.92);
+            color: #5A3E38;
+            border: 1.5px solid #E8B4A2;
+            box-shadow: 0 6px 16px -4px rgba(212, 132, 114, 0.2);
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-radius: 20px;
+        }
+
+        .btn-soft:hover {
+            background: #F7E4D8;
+            transform: translateY(-2px);
+            border-color: #D48472;
+        }
+
+        /* Keyframe Animations */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(232, 180, 162, 0.65), 0 12px 30px -6px rgba(212, 132, 114, 0.5); }
+            50% { box-shadow: 0 0 0 14px rgba(232, 180, 162, 0), 0 16px 36px -4px rgba(212, 132, 114, 0.75); }
+        }
+
+        @keyframes petBounce {
+            0% { transform: scale(1) translateY(0); }
+            30% { transform: scale(1.18, 0.86) translateY(4px); }
+            55% { transform: scale(0.92, 1.12) translateY(-18px) rotate(-4deg); }
+            75% { transform: scale(1.05, 0.96) translateY(-4px) rotate(4deg); }
+            100% { transform: scale(1) translateY(0) rotate(0deg); }
+        }
+
+        @keyframes flowerBloom {
+            0% { transform: scale(0.8) rotate(-8deg); }
+            50% { transform: scale(1.24) rotate(6deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        .animate-glow {
+            animation: pulseGlow 2.4s infinite;
+        }
+
+        .pet-jump {
+            animation: petBounce 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .flower-pop {
+            animation: flowerBloom 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* Floating Particles */
+        .floating-particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 60;
+            animation: riseAndFade 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes riseAndFade {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(0.5) rotate(0deg);
+            }
+            40% {
+                opacity: 1;
+                transform: translate(var(--tx, 15px), -50px) scale(1.15) rotate(var(--rot, 12deg));
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--tx2, -15px), -125px) scale(0.85) rotate(var(--rot2, -12deg));
+            }
+        }
+
+        /* Edge Critter Peeking Styling */
+        #edge-critter-container {
+            position: fixed;
+            z-index: 80;
+            transition: all 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        /* Mirror Video Styling */
+        .mirror-video {
+            transform: scaleX(-1);
+            object-fit: cover;
+        }
+
+        .mirror-frame-glow {
+            box-shadow: 0 0 40px rgba(232, 180, 162, 0.75),
+                        inset 0 0 25px rgba(253, 246, 240, 0.85);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDF6F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E8B4A2;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D48472;
+        }
+
+        /* Tab Transition */
+        .stage-section {
+            transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .stage-hidden {
+            display: none !important;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+    </style>
+</head>
+<body class="selection:bg-blush selection:text-white pb-16" onclick="handleGlobalBodyClick(event)">
+
+    <!-- Background Ambient Floating Petals Canvas -->
+    <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+    <!-- ==========================================
+         STEP 0: CAMERA PERMISSION WELCOME MODAL
+         ========================================== -->
+    <div id="camera-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#5A3E38]/45 backdrop-blur-md transition-opacity duration-500">
+        <div class="glass-card max-w-md w-full p-6 sm:p-8 text-center relative overflow-hidden border-2 border-white" onclick="event.stopPropagation()">
+            <!-- Decorative Top Wreath SVG -->
+            <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-tr from-peach to-cream flex items-center justify-center shadow-inner border border-blush/50 animate-float">
+                <svg class="w-12 h-12 text-terracotta" viewBox="0 0 64 64" fill="none">
+                    <path d="M32 54C32 54 10 40 10 23C10 15 16.5 10 23 10C27.5 10 30.5 12.5 32 15.5C33.5 12.5 36.5 10 41 10C47.5 10 54 15 54 23C54 40 32 54 32 54Z" fill="#E8B4A2" stroke="#D48472" stroke-width="2.5"/>
+                    <circle cx="24" cy="22" r="2.5" fill="#FDF6F0"/>
+                    <path d="M46 12L48 7M52 16L57 14M49 21L54 23" stroke="#D48472" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <span class="inline-block px-3.5 py-1 rounded-full bg-peach/90 text-deepRose text-xs font-semibold tracking-wider uppercase mb-2">
+                Đặc Quyền Dành Riêng Cho Các Chị Đẹp 💖
+            </span>
+
+            <h1 class="font-serif text-2xl sm:text-3xl font-bold text-cocoa mb-3 leading-snug">
+                Món Quà Nhỏ Gửi Các Chị Yêu Của Em! 🌷✨
+            </h1>
+
+            <p class="text-softCocoa text-sm sm:text-base leading-relaxed mb-6">
+                Đứa em đáng yêu nhất nhà đã kỳ công chuẩn bị một khu vườn thú cưng, rổ hoa tiên tri và một <strong>chiếc Gương Thần bí mật</strong> ở cuối trang dành tặng các chị. Trước tiên, chị yêu bấm cho phép <strong>Camera trước</strong> để chiếc gương thần cuối hành trình hoạt động lung linh nhất nha!
+            </p>
+
+            <div class="space-y-3">
+                <button id="btn-RequestCamera" onclick="requestInitialCamera()" class="btn-romantic animate-glow w-full py-3.5 px-6 font-semibold text-base flex items-center justify-center gap-2">
+                    <span>Cho phép Camera & Bắt đầu khám phá ✨</span>
+                </button>
+
+                <button onclick="skipInitialCamera()" class="w-full py-2.5 px-4 rounded-2xl text-xs sm:text-sm text-softCocoa hover:text-cocoa hover:bg-peach/50 transition">
+                    Vào xem trước (Bật camera sau)
+                </button>
+            </div>
+
+            <p id="camera-modal-status" class="mt-3 text-xs text-deepRose hidden"></p>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         TOP NAVIGATION BAR & HEADER
+         ========================================== -->
+    <header class="relative z-20 pt-5 pb-3 px-4 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-blush to-terracotta flex items-center justify-center text-white shadow-md">
+                        <span class="text-xl">🌷</span>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <h2 class="font-serif text-lg sm:text-xl font-bold text-cocoa leading-tight">
+                                Gửi Các Chị Yêu Quý Của Em
+                            </h2>
+                            <span id="camera-status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-peach/90 text-softCocoa border border-blush/50">
+                                <span id="camera-status-dot" class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+                                <span id="camera-status-text">Gương Thần: Chờ bật</span>
+                            </span>
+                        </div>
+                        <p class="text-xs text-softCocoa">Món quà tinh thần từ đứa em ngoan xinh yêu nhất nhà ✨</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Happiness Progress Meter & Quick Action Buttons -->
+            <div class="flex items-center gap-2 w-full md:w-auto justify-between md:justify-end flex-wrap sm:flex-nowrap">
+                <div class="glass-pill px-3.5 py-2 flex items-center gap-2.5 flex-1 sm:flex-initial">
+                    <span class="text-base" id="love-meter-emoji">💖</span>
+                    <div class="w-36 sm:w-44">
+                        <div class="flex justify-between text-[11px] font-semibold text-cocoa mb-1">
+                            <span class="truncate pr-1">Độ Rạng Rỡ & Hạnh Phúc Của Chị Yêu</span>
+                            <span id="love-score-text">30%</span>
+                        </div>
+                        <div class="w-full h-2 bg-peach rounded-full overflow-hidden">
+                            <div id="love-progress-bar" class="h-full bg-gradient-to-r from-blush to-terracotta rounded-full transition-all duration-500" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="triggerRandomEdgeCritter(true); event.stopPropagation();" title="Gọi thú cưng ú òa từ mép màn hình" class="btn-soft px-3.5 py-2.5 text-xs font-semibold flex items-center gap-1.5 shrink-0">
+                    <span>🐾 Ú òa!</span>
+                </button>
+
+                <button onclick="showerLoveHearts(); event.stopPropagation();" title="Bắn tim ngập tràn màn hình" class="btn-romantic px-3.5 py-2.5 text-xs font-semibold flex items-center gap-1.5 shrink-0">
+                    <span>💖 Bắn Tim</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Stage Navigation Horizontal Tabs -->
+        <nav class="glass-pill p-1.5 grid grid-cols-3 gap-1.5 max-w-2xl mx-auto">
+            <button onclick="switchStage(1); event.stopPropagation();" id="tab-stage-1" class="stage-tab py-2.5 px-2 sm:px-4 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 bg-gradient-to-r from-blush to-terracotta text-white shadow-sm flex items-center justify-center gap-1.5">
+                <span>🌸 Khu Vườn Chị Đẹp</span>
+            </button>
+            <button onclick="switchStage(2); event.stopPropagation();" id="tab-stage-2" class="stage-tab py-2.5 px-2 sm:px-4 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 text-softCocoa hover:bg-peach/60 flex items-center justify-center gap-1.5">
+                <span>🧺 Rổ Hoa Tiên Tri</span>
+            </button>
+            <button onclick="switchStage(3); event.stopPropagation();" id="tab-stage-3" class="stage-tab py-2.5 px-2 sm:px-4 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 text-softCocoa hover:bg-peach/60 flex items-center justify-center gap-1.5">
+                <span>🪞 Bí Mật Cuối Cùng</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT CONTAINER
+         ========================================== -->
+    <main class="relative z-10 max-w-5xl mx-auto px-4 mt-2">
+
+        <!-- ==========================================
+             STAGE 1: 🌸 KHU VƯỜN CHỊ ĐẸP (PETS, FLOWERS, HEARTS)
+             ========================================== -->
+        <section id="stage-1" class="stage-section space-y-6">
+            <!-- Hero Banner Card -->
+            <div class="glass-card p-6 sm:p-8 relative overflow-hidden">
+                <div class="max-w-2xl">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-peach text-deepRose text-xs font-semibold mb-3">
+                        <span>👑 Chứng nhận: Những Người Chị Tuyệt Vời Nhất Quả Đất</span>
+                    </span>
+                    <h1 class="font-serif text-2xl sm:text-4xl font-bold text-cocoa mb-2 leading-tight">
+                        Gửi Ngàn Yêu Thương Đến Các Chị Đẹp Của Em! 🌸💖
+                    </h1>
+                    <p class="text-softCocoa text-sm sm:text-base leading-relaxed mb-5">
+                        Cảm ơn các chị yêu vì lúc nào cũng thương yêu, chiều chuộng, che chở và làm chỗ dựa siêu vững chắc cho em (dù đôi lúc em hơi nhây một xíu). Chị bấm vào mấy bé thú cưng và vườn hoa bên dưới để nhận thông điệp ngọt ngào từ em nha!
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="showerLoveHearts(); event.stopPropagation();" class="btn-romantic px-5 py-3 text-sm font-semibold flex items-center gap-2">
+                            <span>💖 Bắn Tim Tặng Chị Yêu</span>
+                        </button>
+                        <button onclick="bloomAllGardenFlowers(); event.stopPropagation();" class="btn-soft px-5 py-3 text-sm font-semibold flex items-center gap-2">
+                            <span>🌸 Nở Rộ Nguyên Vườn Hoa</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Floating Decorative Big Heart Badge -->
+                <div onclick="handleHeartClick(event); event.stopPropagation();" class="hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 w-36 h-36 rounded-full bg-gradient-to-br from-cream to-peach border-2 border-white shadow-lg items-center justify-center cursor-pointer group hover:scale-105 transition">
+                    <div class="text-center px-2">
+                        <div class="text-5xl group-hover:scale-125 transition duration-300">💝</div>
+                        <span class="text-[11px] font-semibold text-deepRose block mt-1">Chạm nhận tim em!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive 5 Cute SVG Animals Section -->
+            <div class="glass-card p-6 sm:p-7">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
+                    <div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-cocoa flex items-center gap-2">
+                            <span>Biệt Đội Thú Cưng Nịnh Các Chị Yêu</span>
+                            <span class="text-lg">🐾</span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-softCocoa">Chị chạm vào từng bé thú cưng để nghe lời nhắn gửi từ đứa em cưng nha!</p>
+                    </div>
+                    <span id="pet-speech-banner" class="px-4 py-2 rounded-2xl bg-peach/80 text-cocoa text-xs sm:text-sm font-medium border border-blush/50 transition-all">
+                        💬 "Meow~ Chị đẹp chạm vào tụi con đi ạ!"
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4" id="pets-grid">
+                    <!-- Pet 1: Mèo Kem Bơ -->
+                    <div onclick="interactWithPet(0, this, event); event.stopPropagation();" class="pet-card group bg-cream/85 hover:bg-white border border-blush/45 rounded-[24px] p-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg relative">
+                        <div class="w-20 h-20 mx-auto mb-2 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                                <path d="M22 42 L18 16 L40 28 Z" fill="#F7E4D8" stroke="#5A3E38" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M78 42 L82 16 L60 28 Z" fill="#F7E4D8" stroke="#5A3E38" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M24 36 L22 22 L35 29 Z" fill="#E8B4A2"/>
+                                <path d="M76 36 L78 22 L65 29 Z" fill="#E8B4A2"/>
+                                <ellipse cx="50" cy="56" rx="34" ry="29" fill="#FDF6F0" stroke="#5A3E38" stroke-width="3"/>
+                                <circle cx="37" cy="52" r="4" fill="#5A3E38"/>
+                                <circle cx="63" cy="52" r="4" fill="#5A3E38"/>
+                                <circle cx="35.5" cy="50.5" r="1.5" fill="#FFF"/>
+                                <circle cx="61.5" cy="50.5" r="1.5" fill="#FFF"/>
+                                <ellipse cx="29" cy="60" rx="5.5" ry="3.2" fill="#E8B4A2" opacity="0.85"/>
+                                <ellipse cx="71" cy="60" rx="5.5" ry="3.2" fill="#E8B4A2" opacity="0.85"/>
+                                <path d="M46 58 Q50 62 54 58" stroke="#5A3E38" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <path d="M50 55 L48 58 L52 58 Z" fill="#D48472"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-cocoa">Mèo Kem Bơ</h4>
+                        <p class="text-[11px] text-softCocoa mt-0.5">Chúc chị trẻ mãi</p>
+                        <span class="inline-block mt-2 text-[11px] px-2.5 py-0.5 rounded-full bg-peach/80 text-deepRose font-medium">Nựng má ✨</span>
+                    </div>
+
+                    <!-- Pet 2: Thỏ Đào Sữa -->
+                    <div onclick="interactWithPet(1, this, event); event.stopPropagation();" class="pet-card group bg-cream/85 hover:bg-white border border-blush/45 rounded-[24px] p-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg relative">
+                        <div class="w-20 h-20 mx-auto mb-2 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                                <ellipse cx="36" cy="26" rx="8" ry="20" transform="rotate(-10 36 26)" fill="#FDF6F0" stroke="#5A3E38" stroke-width="3"/>
+                                <ellipse cx="36" cy="26" rx="4" ry="13" transform="rotate(-10 36 26)" fill="#E8B4A2"/>
+                                <ellipse cx="64" cy="26" rx="8" ry="20" transform="rotate(10 64 26)" fill="#FDF6F0" stroke="#5A3E38" stroke-width="3"/>
+                                <ellipse cx="64" cy="26" rx="4" ry="13" transform="rotate(10 64 26)" fill="#E8B4A2"/>
+                                <ellipse cx="50" cy="60" rx="32" ry="27" fill="#FDF6F0" stroke="#5A3E38" stroke-width="3"/>
+                                <circle cx="38" cy="56" r="4" fill="#5A3E38"/>
+                                <circle cx="62" cy="56" r="4" fill="#5A3E38"/>
+                                <ellipse cx="30" cy="63" rx="6" ry="3.5" fill="#E8B4A2"/>
+                                <ellipse cx="70" cy="63" rx="6" ry="3.5" fill="#E8B4A2"/>
+                                <path d="M47 62 Q50 66 53 62" stroke="#5A3E38" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <circle cx="50" cy="59" r="2.5" fill="#D48472"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-cocoa">Thỏ Đào Sữa</h4>
+                        <p class="text-[11px] text-softCocoa mt-0.5">Chúc chị xinh lung linh</p>
+                        <span class="inline-block mt-2 text-[11px] px-2.5 py-0.5 rounded-full bg-peach/80 text-deepRose font-medium">Xoa tai 🌸</span>
+                    </div>
+
+                    <!-- Pet 3: Cún Shiba -->
+                    <div onclick="interactWithPet(2, this, event); event.stopPropagation();" class="pet-card group bg-cream/85 hover:bg-white border border-blush/45 rounded-[24px] p-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg relative">
+                        <div class="w-20 h-20 mx-auto mb-2 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                                <path d="M22 40 L20 15 L42 28 Z" fill="#E6B89C" stroke="#5A3E38" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M78 40 L80 15 L58 28 Z" fill="#E6B89C" stroke="#5A3E38" stroke-width="3" stroke-linejoin="round"/>
+                                <ellipse cx="50" cy="56" rx="34" ry="29" fill="#E6B89C" stroke="#5A3E38" stroke-width="3"/>
+                                <path d="M22 60 Q35 45 50 58 Q65 45 78 60 Q72 82 50 84 Q28 82 22 60 Z" fill="#FDF6F0"/>
+                                <circle cx="38" cy="44" r="3" fill="#FDF6F0"/>
+                                <circle cx="62" cy="44" r="3" fill="#FDF6F0"/>
+                                <circle cx="38" cy="52" r="4" fill="#5A3E38"/>
+                                <circle cx="62" cy="52" r="4" fill="#5A3E38"/>
+                                <ellipse cx="50" cy="58" rx="4" ry="3" fill="#5A3E38"/>
+                                <path d="M44 64 Q50 70 56 64" stroke="#5A3E38" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="30" cy="60" rx="5" ry="3" fill="#E8B4A2"/>
+                                <ellipse cx="70" cy="60" rx="5" ry="3" fill="#E8B4A2"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-cocoa">Cún Shiba</h4>
+                        <p class="text-[11px] text-softCocoa mt-0.5">Vệ sĩ bảo vệ các chị</p>
+                        <span class="inline-block mt-2 text-[11px] px-2.5 py-0.5 rounded-full bg-peach/80 text-deepRose font-medium">Bắt tay 🐾</span>
+                    </div>
+
+                    <!-- Pet 4: Gấu Bông Mật -->
+                    <div onclick="interactWithPet(3, this, event); event.stopPropagation();" class="pet-card group bg-cream/85 hover:bg-white border border-blush/45 rounded-[24px] p-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg relative">
+                        <div class="w-20 h-20 mx-auto mb-2 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                                <circle cx="26" cy="28" r="11" fill="#D4A383" stroke="#5A3E38" stroke-width="3"/>
+                                <circle cx="26" cy="28" r="6" fill="#F7E4D8"/>
+                                <circle cx="74" cy="28" r="11" fill="#D4A383" stroke="#5A3E38" stroke-width="3"/>
+                                <circle cx="74" cy="28" r="6" fill="#F7E4D8"/>
+                                <ellipse cx="50" cy="56" rx="33" ry="29" fill="#D4A383" stroke="#5A3E38" stroke-width="3"/>
+                                <ellipse cx="50" cy="62" rx="13" ry="10" fill="#FDF6F0"/>
+                                <circle cx="38" cy="50" r="4" fill="#5A3E38"/>
+                                <circle cx="62" cy="50" r="4" fill="#5A3E38"/>
+                                <ellipse cx="50" cy="58" rx="4" ry="3" fill="#5A3E38"/>
+                                <path d="M46 64 Q50 68 54 64" stroke="#5A3E38" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="29" cy="58" rx="5.5" ry="3" fill="#E8B4A2"/>
+                                <ellipse cx="71" cy="58" rx="5.5" ry="3" fill="#E8B4A2"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-cocoa">Gấu Bông Mật</h4>
+                        <p class="text-[11px] text-softCocoa mt-0.5">Nhắc chị dẫn em đi ăn</p>
+                        <span class="inline-block mt-2 text-[11px] px-2.5 py-0.5 rounded-full bg-peach/80 text-deepRose font-medium">Ôm cái 🧋</span>
+                    </div>
+
+                    <!-- Pet 5: Vịt Phấn Hồng -->
+                    <div onclick="interactWithPet(4, this, event); event.stopPropagation();" class="pet-card col-span-2 sm:col-span-1 group bg-cream/85 hover:bg-white border border-blush/45 rounded-[24px] p-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg relative">
+                        <div class="w-20 h-20 mx-auto mb-2 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                                <path d="M48 27 Q52 15 60 22 Q54 27 52 28" fill="#FAD2D8" stroke="#5A3E38" stroke-width="2.5"/>
+                                <ellipse cx="50" cy="57" rx="32" ry="28" fill="#FAD2D8" stroke="#5A3E38" stroke-width="3"/>
+                                <circle cx="38" cy="51" r="4" fill="#5A3E38"/>
+                                <circle cx="62" cy="51" r="4" fill="#5A3E38"/>
+                                <ellipse cx="50" cy="59" rx="10" ry="5.5" fill="#F4A261" stroke="#5A3E38" stroke-width="2.5"/>
+                                <ellipse cx="28" cy="58" rx="5.5" ry="3" fill="#E8B4A2"/>
+                                <ellipse cx="72" cy="58" rx="5.5" ry="3" fill="#E8B4A2"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-cocoa">Vịt Phấn Hồng</h4>
+                        <p class="text-[11px] text-softCocoa mt-0.5">Chúc chị tiền đầy túi</p>
+                        <span class="inline-block mt-2 text-[11px] px-2.5 py-0.5 rounded-full bg-peach/80 text-deepRose font-medium">Chọt mỏ 🐤</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive 6 Garden Flower Beds Section -->
+            <div class="glass-card p-6 sm:p-7">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                    <div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-cocoa">
+                            6 Khóm Hoa Tôn Vinh Chị Đẹp 🌺
+                        </h3>
+                        <p class="text-xs sm:text-sm text-softCocoa">Chị chạm vào từng khóm hoa để hoa nở bung và hiện lời khen từ em nha!</p>
+                    </div>
+                    <span id="flower-compliment-box" class="px-4 py-2 rounded-2xl bg-cream border border-blush/55 text-deepRose text-xs sm:text-sm font-semibold">
+                        ✨ Chạm vào một khóm hoa bất kỳ đi chị yêu ơi!
+                    </span>
+                </div>
+
+                <div id="interactive-meadow" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 py-2">
+                    <!-- Populated dynamically by JS -->
+                </div>
+
+                <!-- Next Step CTA -->
+                <div class="mt-6 pt-5 border-t border-blush/35 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <p class="text-xs sm:text-sm text-softCocoa text-center sm:text-left">
+                        Dạo chơi vườn thú cưng xong rồi, mời chị yêu ghé qua <strong>Rổ Hoa Tiên Tri</strong> chọn 1 sắc hoa để nhận quẻ may mắn hôm nay nha!
+                    </p>
+                    <button onclick="switchStage(2); event.stopPropagation();" class="btn-romantic px-6 py-3 text-sm font-semibold flex items-center gap-2 shrink-0">
+                        <span>Qua Rổ Hoa Tiên Tri 🧺</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 2: 🧺 RỔ HOA TIÊN TRI (SELECT 1 OF 6 FLOWER COLORS)
+             ========================================== -->
+        <section id="stage-2" class="stage-section stage-hidden space-y-6">
+            <div class="glass-card p-6 sm:p-8 text-center">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-peach text-deepRose text-xs font-semibold uppercase tracking-wider mb-2">
+                    Quẻ Tiên Tri May Mắn Dành Cho Chị Yêu
+                </span>
+                <h2 class="font-serif text-2xl sm:text-4xl font-bold text-cocoa mb-2">
+                    Rổ Hoa Tiên Tri 6 Sắc Hoa 🧺✨
+                </h2>
+                <p class="text-softCocoa text-sm sm:text-base max-w-xl mx-auto mb-6">
+                    Em đã gom đủ 6 sắc hoa rực rỡ nhất vào chiếc rổ mây này. Chị yêu hãy chọn <strong>1 màu hoa</strong> mà chị thích nhất ngay lúc này để xem vũ trụ (và em) gửi lời tiên tri gì đến chị nha!
+                </p>
+
+                <!-- Woven Basket Illustration & 6 Selectable Flower Colors -->
+                <div class="relative max-w-3xl mx-auto bg-gradient-to-b from-cream/95 to-peach/65 rounded-[28px] p-5 sm:p-8 border-2 border-white shadow-inner">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 relative z-10" id="flower-basket-grid">
+                        <!-- Rendered by JS: 6 distinct flower colors -->
+                    </div>
+
+                    <!-- Decorative SVG Woven Basket Base -->
+                    <div class="mt-6 mx-auto max-w-lg relative">
+                        <svg viewBox="0 0 500 72" class="w-full h-16 drop-shadow-md">
+                            <path d="M25 8 L475 8 L445 64 C442 68 435 70 425 70 L75 70 C65 70 58 68 55 64 Z" fill="#D4A383" stroke="#8C5E42" stroke-width="3"/>
+                            <path d="M18 8 Q250 18 482 8" stroke="#8C5E42" stroke-width="6" stroke-linecap="round" fill="none"/>
+                            <path d="M60 28 L440 28 M70 48 L430 48" stroke="#B88362" stroke-width="2.5" stroke-dasharray="14 10"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-xs font-semibold text-cocoa bg-cream/95 px-4 py-1 rounded-full shadow-sm border border-blush/50">
+                                🧺 Rổ Hoa May Mắn Em Tặng Các Chị Đẹp
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prophecy Reveal Card (Appears when a flower color is chosen) -->
+                <div id="prophecy-result-container" class="hidden mt-8 max-w-2xl mx-auto">
+                    <div class="glass-card p-6 sm:p-8 border-2 border-blush relative overflow-hidden bg-gradient-to-br from-cream via-white to-peach/55">
+                        <div class="flex flex-col items-center text-center">
+                            <div id="prophecy-flower-icon" class="w-20 h-20 rounded-full bg-peach/70 flex items-center justify-center text-4xl mb-3 shadow-inner border border-white flower-pop">
+                                🌸
+                            </div>
+                            <span id="prophecy-flower-badge" class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 bg-peach text-deepRose">
+                                Quẻ Tiên Tri Từ Hoa Hồng Đào
+                            </span>
+                            <h3 id="prophecy-flower-title" class="font-serif text-xl sm:text-2xl font-bold text-cocoa mb-4">
+                                Nhan Sắc Lên Hương & Ngọt Ngào Viên Mãn
+                            </h3>
+
+                            <div class="bg-cream/95 border border-blush/55 rounded-2xl p-5 sm:p-6 mb-6 shadow-sm w-full">
+                                <p id="prophecy-text" class="font-serif italic text-lg sm:text-xl text-cocoa leading-relaxed">
+                                    "Lời tiên tri đang hiện lên..."
+                                </p>
+                            </div>
+
+                            <div class="flex flex-wrap items-center justify-center gap-3 w-full">
+                                <button onclick="rerollCurrentFlowerProphecy(); event.stopPropagation();" class="btn-soft px-5 py-3 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                                    <span>🔄 Rút thêm câu tiên tri khác của màu này</span>
+                                </button>
+                                <button onclick="switchStage(3); event.stopPropagation();" class="btn-romantic animate-glow px-6 py-3 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                                    <span>Mở Bí Mật Cuối Cùng 🪞✨</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 3: 🪞 BÍ MẬT CUỐI CÙNG (MAGIC MIRROR CAMERA REVEAL)
+             ========================================== -->
+        <section id="stage-3" class="stage-section stage-hidden space-y-6">
+            <div class="glass-card p-6 sm:p-10 text-center max-w-3xl mx-auto relative overflow-hidden">
+                
+                <!-- Question View (Before Reveal) -->
+                <div id="finale-question-view" class="py-8 sm:py-12 space-y-6">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-peach to-cream border-2 border-blush flex items-center justify-center text-5xl shadow-md animate-float">
+                        🪞
+                    </div>
+
+                    <div class="space-y-3 max-w-xl mx-auto">
+                        <span class="inline-block px-4 py-1 rounded-full bg-peach text-deepRose text-xs font-semibold uppercase tracking-widest">
+                            Câu Hỏi Đặc Biệt Cuối Hành Trình
+                        </span>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cocoa leading-tight">
+                            "Bạn có biết ai đẹp nhất hôm nay không?"
+                        </h2>
+                        <p class="text-softCocoa text-sm sm:text-base pt-2">
+                            Chị thử đoán xem người phụ nữ rạng rỡ, xinh đẹp và tuyệt vời nhất hôm nay là ai nào? Chỉnh lại tóc xinh, mỉm cười thật tươi rồi bấm nút bên dưới để Gương Thần hiện đáp án nha!
+                        </p>
+                    </div>
+
+                    <div class="pt-4">
+                        <button onclick="revealMagicMirror(); event.stopPropagation();" class="btn-romantic animate-glow px-8 py-4 text-base sm:text-lg font-bold inline-flex items-center gap-3">
+                            <span>Bấm để mở Gương Thần xem đáp án 🪞✨</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Countdown Shimmer Overlay (3 - 2 - 1) -->
+                <div id="finale-countdown-view" class="hidden py-16 space-y-4">
+                    <p class="font-serif italic text-xl text-deepRose">Gương Thần đang tìm người phụ nữ đẹp nhất hôm nay...</p>
+                    <div id="countdown-number" class="font-serif text-6xl sm:text-7xl font-bold text-terracotta animate-bounce">
+                        3
+                    </div>
+                    <p class="text-xs text-softCocoa">Chị yêu chuẩn bị mỉm cười thật tươi nha! ✨</p>
+                </div>
+
+                <!-- Magic Mirror Reveal View (Live Camera Feed) -->
+                <div id="finale-mirror-view" class="hidden space-y-6">
+                    <div class="space-y-2">
+                        <span class="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-gradient-to-r from-blush to-terracotta text-white text-xs font-semibold shadow-sm">
+                            <span>👑 Đáp Án Từ Gương Thần</span>
+                        </span>
+                        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-cocoa leading-snug">
+                            Chính là CHỊ YÊU đó — người chị xinh đẹp, trẻ trung và tuyệt vời nhất trên đời! ✨👑💖
+                        </h2>
+                        <p class="text-softCocoa text-sm sm:text-base max-w-xl mx-auto">
+                            Chẳng cần tìm kiếm đâu xa, người đang mỉm cười trong chiếc Gương Thần này chính là người chị gái vừa xinh đẹp, vừa ấm áp nhất của em!
+                        </p>
+                    </div>
+
+                    <!-- Ornate Magic Mirror Frame -->
+                    <div class="relative max-w-md mx-auto pt-3">
+                        <!-- Custom SVG Floral Crown Overlay at Top of Mirror -->
+                        <div class="-mb-6 relative z-20 flex flex-col items-center">
+                            <svg class="w-40 h-14 drop-shadow-md" viewBox="0 0 200 65" fill="none">
+                                <path d="M25 52 Q100 20 175 52" stroke="#D48472" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M40 48 L60 16 L100 38 L140 16 L160 48" stroke="#E8B4A2" stroke-width="3" fill="rgba(253,246,240,0.9)" stroke-linejoin="round"/>
+                                <circle cx="100" cy="22" r="10" fill="#D48472" stroke="#FDF6F0" stroke-width="2.5"/>
+                                <circle cx="60" cy="26" r="7.5" fill="#E8B4A2" stroke="#FDF6F0" stroke-width="2"/>
+                                <circle cx="140" cy="26" r="7.5" fill="#E8B4A2" stroke="#FDF6F0" stroke-width="2"/>
+                                <circle cx="100" cy="22" r="4" fill="#FDF6F0"/>
+                            </svg>
+                            <div id="mirror-crown-badge" class="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-cream border-2 border-blush shadow-md text-xs sm:text-sm font-bold text-deepRose">
+                                <span>🌸👑 Chị Đẹp Rạng Rỡ Nhất Hôm Nay 👑🌸</span>
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-[34px] p-3 sm:p-4 bg-gradient-to-b from-blush via-peach to-terracotta mirror-frame-glow border-4 border-white shadow-2xl overflow-hidden">
+                            <!-- Live Video Element / Uploaded Photo Preview -->
+                            <div class="relative aspect-[3/4] sm:aspect-[4/4] w-full rounded-[26px] overflow-hidden bg-[#422C27] flex items-center justify-center">
+                                <video id="mirror-video-el" autoplay playsinline muted class="mirror-video w-full h-full hidden"></video>
+                                <img id="mirror-uploaded-img" alt="Ảnh Chị Đẹp" class="w-full h-full object-cover hidden" />
+
+                                <!-- Fallback if camera wasn't granted or available -->
+                                <div id="mirror-fallback-box" class="p-6 text-center text-cream space-y-4 z-10">
+                                    <div class="w-20 h-20 mx-auto rounded-full bg-peach/20 border-2 border-blush flex items-center justify-center text-4xl">
+                                        👑
+                                    </div>
+                                    <h4 class="font-serif text-xl font-bold text-peach">
+                                        Người Đẹp Nhất Đang Ở Ngay Trước Màn Hình!
+                                    </h4>
+                                    <p class="text-xs sm:text-sm text-cream/90 leading-relaxed">
+                                        Chị yêu bấm bật Camera bên dưới để soi Gương Thần trực tiếp, hoặc chọn một tấm ảnh thật xinh trong máy để ghép khung Vương Miện Chị Đẹp nha!
+                                    </p>
+                                    <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-1">
+                                        <button onclick="retryCameraOnMirror(); event.stopPropagation();" class="btn-romantic px-5 py-2.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2">
+                                            <span>📷 Bật Camera Gương Thần</span>
+                                        </button>
+                                        <label class="btn-soft px-4 py-2.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2 cursor-pointer">
+                                            <span>🖼️ Chọn ảnh từ máy</span>
+                                            <input type="file" accept="image/*" class="hidden" onchange="handleFallbackImageUpload(event)">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Decorative Frame Overlay inside the Mirror -->
+                                <div id="mirror-overlay-decor" class="absolute inset-0 pointer-events-none flex flex-col justify-between p-4">
+                                    <div class="flex justify-between items-start text-2xl sm:text-3xl drop-shadow">
+                                        <span id="decor-tl">🌷✨</span>
+                                        <span id="decor-tr">✨🌷</span>
+                                    </div>
+                                    <div class="bg-gradient-to-t from-[#5A3E38]/85 via-[#5A3E38]/35 to-transparent -mx-4 -mb-4 p-4 pt-10 text-center">
+                                        <p id="mirror-caption-overlay" class="font-serif italic text-white text-base sm:text-lg font-semibold drop-shadow">
+                                            "Chị yêu của em xinh đẹp và trẻ trung số 1! ✨💖"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frame Customizer & Snapshot Actions -->
+                    <div class="flex flex-wrap items-center justify-center gap-2.5 pt-2">
+                        <button onclick="changeMirrorTheme(0); event.stopPropagation();" class="btn-soft px-3.5 py-2 text-xs font-semibold">
+                            🌸 Vương Miện Hoa Đào
+                        </button>
+                        <button onclick="changeMirrorTheme(1); event.stopPropagation();" class="btn-soft px-3.5 py-2 text-xs font-semibold">
+                            👑 Nữ Hoàng Chị Đẹp
+                        </button>
+                        <button onclick="changeMirrorTheme(2); event.stopPropagation();" class="btn-soft px-3.5 py-2 text-xs font-semibold">
+                            💖 Chị Gái Quốc Dân
+                        </button>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
+                        <button onclick="captureMirrorSnapshot(); event.stopPropagation();" class="btn-romantic px-6 py-3.5 text-sm font-semibold flex items-center gap-2">
+                            <span>📸 Chụp lưu khoảnh khắc Chị Đẹp</span>
+                        </button>
+                        <button onclick="showerLoveHearts(); event.stopPropagation();" class="btn-soft px-5 py-3.5 text-sm font-semibold flex items-center gap-2">
+                            <span>💖 Bắn Tim Chúc Mừng Chị</span>
+                        </button>
+                    </div>
+
+                    <!-- Snapshot Preview Modal / Section -->
+                    <div id="snapshot-result-box" class="hidden pt-4 max-w-sm mx-auto">
+                        <div class="bg-white p-4 rounded-[26px] shadow-xl border border-blush">
+                            <p class="text-xs font-bold text-deepRose mb-2">✨ Ảnh Kỷ Niệm Chị Đẹp Rạng Rỡ Nhất Hôm Nay ✨</p>
+                            <canvas id="snapshot-canvas" class="w-full rounded-2xl border border-peach"></canvas>
+                            <a id="download-snapshot-link" download="chi-dep-nhat-hom-nay.png" onclick="event.stopPropagation()" class="mt-3 btn-romantic w-full py-2.5 text-xs font-semibold inline-block">
+                                💝 Tải Ảnh Kỷ Niệm Về Máy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         PERIODIC EDGE-POPPING CRITTER (Ú ÒA TỪ 4 VIỀN MÀN HÌNH)
+         ========================================== -->
+    <div id="edge-critter-container" class="opacity-0 pointer-events-none" onclick="pokeEdgeCritter(event)">
+        <div id="edge-critter-inner" class="flex items-center gap-2">
+            <!-- Dynamically updated with custom SVG critter + speech bubble -->
+        </div>
+    </div>
+
+    <!-- ==========================================
+         JAVASCRIPT LOGIC
+         ========================================== -->
+    <script>
+        /* ----------------------------------------------------------
+         * GLOBAL STATE
+         * ---------------------------------------------------------- */
+        let magicStream = null;
+        let uploadedMirrorImage = null;
+        let loveScore = 30;
+        let currentStage = 1;
+        let selectedFlowerIndex = 0;
+        let lastProphecyIndexByFlower = {};
+        let currentMirrorTheme = 0;
+        let edgeCritterTimeout = null;
+
+        /* ----------------------------------------------------------
+         * STEP 0: CAMERA PERMISSION HANDLING ON ENTRY
+         * ---------------------------------------------------------- */
+        function updateCameraBadge(statusText, isReady) {
+            const dot = document.getElementById('camera-status-dot');
+            const text = document.getElementById('camera-status-text');
+            if (!dot || !text) return;
+            if (isReady) {
+                dot.className = 'w-1.5 h-1.5 rounded-full bg-emerald-500';
+                text.textContent = statusText || 'Gương Thần: Đã sẵn sàng ✨';
+            } else {
+                dot.className = 'w-1.5 h-1.5 rounded-full bg-amber-500';
+                text.textContent = statusText || 'Gương Thần: Bật ở màn cuối';
+            }
+        }
+
+        async function requestInitialCamera() {
+            const btn = document.getElementById('btn-RequestCamera');
+            btn.disabled = true;
+            btn.innerHTML = '<span>Đang đánh thức Gương Thần... ✨</span>';
+
+            try {
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    magicStream = await navigator.mediaDevices.getUserMedia({
+                        video: { facingMode: 'user', width: { ideal: 720 }, height: { ideal: 720 } },
+                        audio: false
+                    });
+                    attachStreamToMirrorVideo();
+                    updateCameraBadge('Gương Thần: Đã sẵn sàng ✨', true);
+                }
+            } catch (err) {
+                console.warn('Camera permission skipped or unavailable:', err);
+                updateCameraBadge('Gương Thần: Bật ở màn cuối', false);
+            } finally {
+                closeCameraWelcomeModal();
+                showerLoveHearts();
+            }
+        }
+
+        function skipInitialCamera() {
+            updateCameraBadge('Gương Thần: Bật ở màn cuối', false);
+            closeCameraWelcomeModal();
+            showerLoveHearts();
+        }
+
+        function closeCameraWelcomeModal() {
+            const modal = document.getElementById('camera-modal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 500);
+        }
+
+        function attachStreamToMirrorVideo() {
+            const videoEl = document.getElementById('mirror-video-el');
+            const imgEl = document.getElementById('mirror-uploaded-img');
+            const fallbackBox = document.getElementById('mirror-fallback-box');
+            if (magicStream && videoEl) {
+                videoEl.srcObject = magicStream;
+                videoEl.classList.remove('hidden');
+                imgEl.classList.add('hidden');
+                fallbackBox.classList.add('hidden');
+                updateCameraBadge('Gương Thần: Đã sẵn sàng ✨', true);
+            }
+        }
+
+        async function retryCameraOnMirror() {
+            try {
+                magicStream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: 'user' },
+                    audio: false
+                });
+                attachStreamToMirrorVideo();
+                showerLoveHearts();
+            } catch (err) {
+                showFloatingToast('Trình duyệt đang chặn Camera, chị yêu có thể bấm "Chọn ảnh từ máy" ngay bên cạnh để ghép khung nha! 💖');
+            }
+        }
+
+        function handleFallbackImageUpload(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imgEl = document.getElementById('mirror-uploaded-img');
+                const videoEl = document.getElementById('mirror-video-el');
+                const fallbackBox = document.getElementById('mirror-fallback-box');
+
+                uploadedMirrorImage = new Image();
+                uploadedMirrorImage.onload = function() {
+                    imgEl.src = e.target.result;
+                    imgEl.classList.remove('hidden');
+                    videoEl.classList.add('hidden');
+                    fallbackBox.classList.add('hidden');
+                    updateCameraBadge('Gương Thần: Ảnh Chị Đẹp ✨', true);
+                    showerLoveHearts();
+                };
+                uploadedMirrorImage.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        /* ----------------------------------------------------------
+         * STAGE NAVIGATION
+         * ---------------------------------------------------------- */
+        function switchStage(stageNumber) {
+            currentStage = stageNumber;
+            [1, 2, 3].forEach(num => {
+                const sec = document.getElementById(`stage-${num}`);
+                const tab = document.getElementById(`tab-stage-${num}`);
+                if (num === stageNumber) {
+                    sec.classList.remove('stage-hidden');
+                    tab.className = 'stage-tab py-2.5 px-2 sm:px-4 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 bg-gradient-to-r from-blush to-terracotta text-white shadow-sm flex items-center justify-center gap-1.5';
+                } else {
+                    sec.classList.add('stage-hidden');
+                    tab.className = 'stage-tab py-2.5 px-2 sm:px-4 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 text-softCocoa hover:bg-peach/60 flex items-center justify-center gap-1.5';
+                }
+            });
+
+            if (stageNumber === 3 && magicStream) {
+                attachStreamToMirrorVideo();
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        /* ----------------------------------------------------------
+         * HAPPINESS METER & FLOATING HEARTS ON CLICK
+         * ---------------------------------------------------------- */
+        function addLoveScore(amount) {
+            loveScore = Math.min(100, loveScore + amount);
+            document.getElementById('love-score-text').textContent = `${loveScore}%`;
+            document.getElementById('love-progress-bar').style.width = `${loveScore}%`;
+
+            const emojiEl = document.getElementById('love-meter-emoji');
+            if (loveScore >= 100) {
+                emojiEl.textContent = '👑';
+            } else if (loveScore >= 65) {
+                emojiEl.textContent = '🌷';
+            }
+        }
+
+        function spawnParticlesAt(x, y, count = 8, customSymbols = null) {
+            const symbols = customSymbols || ['💖', '🌸', '✨', '🌷', '💝', '👑', '🦋'];
+            for (let i = 0; i < count; i++) {
+                const el = document.createElement('div');
+                el.className = 'floating-particle text-lg sm:text-2xl select-none';
+                el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+                const offsetX = (Math.random() - 0.5) * 40;
+                const offsetY = (Math.random() - 0.5) * 20;
+                el.style.left = `${x + offsetX}px`;
+                el.style.top = `${y + offsetY}px`;
+                el.style.setProperty('--tx', `${(Math.random() - 0.5) * 90}px`);
+                el.style.setProperty('--tx2', `${(Math.random() - 0.5) * 140}px`);
+                el.style.setProperty('--rot', `${(Math.random() - 0.5) * 45}deg`);
+                el.style.setProperty('--rot2', `${(Math.random() - 0.5) * 90}deg`);
+
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 1800);
+            }
+        }
+
+        function handleGlobalBodyClick(e) {
+            // Spawn subtle sparkles & hearts wherever the user taps on the page
+            spawnParticlesAt(e.clientX, e.clientY, 4, ['💖', '✨', '🌸']);
+            addLoveScore(1);
+        }
+
+        function showerLoveHearts() {
+            addLoveScore(8);
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            for (let i = 0; i < 16; i++) {
+                setTimeout(() => {
+                    const rx = Math.random() * (width - 60) + 30;
+                    const ry = Math.random() * (height * 0.6) + height * 0.25;
+                    spawnParticlesAt(rx, ry, 2, ['💖', '🌸', '✨', '🌷', '💝']);
+                }, i * 60);
+            }
+        }
+
+        function handleHeartClick(e) {
+            addLoveScore(8);
+            spawnParticlesAt(e.clientX || window.innerWidth / 2, e.clientY || 250, 10, ['💖', '🌷', '✨', '👑', '💝']);
+        }
+
+        /* ----------------------------------------------------------
+         * STAGE 1: INTERACTIVE PETS & GARDEN MEADOW (OLDER SISTERS EDITION)
+         * ---------------------------------------------------------- */
+        const petQuotes = [
+            // 0: Mèo Kem Bơ
+            [
+                "Meow~ Chúc các chị yêu của em trẻ mãi không già, đi tới đâu ai cũng tưởng mới đôi mươi! 🐱✨",
+                "Meow~ Chị đẹp nhớ ngủ sớm giữ da xinh nha, thức khuya là Mèo Kem Bơ buồn lắm đó! 🌸",
+                "Có các chị vừa tâm lý vừa thương em thế này đúng là phước phần lớn nhất của em! 💖"
+            ],
+            // 1: Thỏ Đào Sữa
+            [
+                "Thỏ Đào chấm điểm nhan sắc các chị hôm nay: 1000/10 điểm không có nhưng! 🐰🌷",
+                "Chúc các chị mỗi ngày thức dậy đều tràn ngập niềm vui, không chút âu lo hay stress nào! ✨",
+                "Nụ cười của các chị làm ấm cả nhà mình luôn, nên ngày nào chị cũng phải cười thật tươi nha! 💖"
+            ],
+            // 2: Cún Shiba
+            [
+                "Gâu gâu! Đứa nào ngoài kia làm các chị yêu của em buồn là Cún Shiba với em đi xử đẹp liền! 🐶🐾",
+                "Chúc sự nghiệp và mọi dự định của các chị đều thăng tiến vù vù, vạn sự hanh thông! 🌟",
+                "Các chị cứ việc tỏa sáng rực rỡ, hậu phương cổ vũ nhiệt tình cứ để em lo! 👑"
+            ],
+            // 3: Gấu Bông Mật
+            [
+                "Gấu Bông nhắn nhủ: Chị đẹp giàu ú ụ rồi thì cuối tuần nhớ dẫn đứa em ngoan này đi ăn ngon nha! 🧸🧋",
+                "Trà sữa, lẩu nướng hay bánh ngọt... chỉ cần đi cùng các chị là món nào cũng ngon gấp bội! 🍰✨",
+                "Cảm ơn các chị vì lúc nào có món ngon hay đồ đẹp cũng nhớ phần cho đứa em này trước tiên! 💝"
+            ],
+            // 4: Vịt Phấn Hồng
+            [
+                "Quạc quạc! Chúc ví tiền của các chị lúc nào cũng dày cộm, ting ting nổ liên hồi cả ngày! 🐤💸",
+                "Chúc các chị mua sắm mỏi tay không cần nhìn giá, tài lộc rực rỡ suốt bốn mùa! 🌸💎",
+                "Vịt Hồng tuyên bố: Các chị gái nhà mình vừa giỏi giang, vừa xinh đẹp lại còn siêu giàu tình cảm! 👑"
+            ]
+        ];
+
+        function interactWithPet(petIndex, cardEl, event) {
+            addLoveScore(6);
+            cardEl.classList.remove('pet-jump');
+            void cardEl.offsetWidth;
+            cardEl.classList.add('pet-jump');
+
+            const quotes = petQuotes[petIndex];
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            const banner = document.getElementById('pet-speech-banner');
+            banner.textContent = `💬 "${randomQuote}"`;
+            banner.classList.add('scale-105');
+            setTimeout(() => banner.classList.remove('scale-105'), 250);
+
+            const rect = cardEl.getBoundingClientRect();
+            const cx = event?.clientX || (rect.left + rect.width / 2);
+            const cy = event?.clientY || (rect.top + rect.height / 2);
+            spawnParticlesAt(cx, cy, 8, ['💖', '🐾', '🌸', '✨', '🌷']);
+        }
+
+        const meadowFlowersData = [
+            { icon: '🌷', name: 'Tulip Dịu Dàng', msg: 'Cảm ơn chị yêu vì luôn dịu dàng, kiên nhẫn lắng nghe và chỉ bảo cho em!' },
+            { icon: '🌹', name: 'Hồng Kiêu Sa', msg: 'Chị của em vừa bản lĩnh, độc lập lại vừa có khí chất rạng ngời khiến ai cũng ngưỡng mộ!' },
+            { icon: '🌻', name: 'Hướng Dương Ấm Áp', msg: 'Ở bên các chị lúc nào em cũng thấy ấm áp, bình yên và tràn đầy năng lượng tích cực!' },
+            { icon: '🌸', name: 'Anh Đào Trẻ Trung', msg: 'Thời gian hình như bỏ quên các chị rồi, ngày càng trẻ đẹp và nhuận sắc hơn xưa!' },
+            { icon: '🌺', name: 'Mẫu Đơn Phú Quý', msg: 'Chúc các chị yêu tài lộc dồi dào, công việc thuận lợi, tiền vào như nước!' },
+            { icon: '🌼', name: 'Cúc Họa Mi An Nhiên', msg: 'Mong mọi điều bình an, ngọt ngào và hạnh phúc nhất luôn ở bên các chị mỗi ngày!' }
+        ];
+
+        function renderInteractiveMeadow() {
+            const container = document.getElementById('interactive-meadow');
+            container.innerHTML = meadowFlowersData.map((fl, idx) => `
+                <button onclick="bloomSingleFlower(${idx}, this, event); event.stopPropagation();" class="meadow-flower-btn group bg-cream/90 hover:bg-white border border-blush/45 rounded-[22px] p-3.5 flex flex-col items-center justify-center gap-1.5 transition-all hover:-translate-y-1 hover:shadow-md">
+                    <span class="flower-emoji text-3xl sm:text-4xl transition-transform duration-300 group-hover:scale-125">${fl.icon}</span>
+                    <span class="text-xs font-semibold text-cocoa">${fl.name}</span>
+                    <span class="text-[10px] text-deepRose bg-peach/70 px-2 py-0.5 rounded-full">Chạm để nở ✨</span>
+                </button>
+            `).join('');
+        }
+
+        function bloomSingleFlower(idx, btnEl, event) {
+            addLoveScore(5);
+            const emojiEl = btnEl.querySelector('.flower-emoji');
+            emojiEl.classList.remove('flower-pop');
+            void emojiEl.offsetWidth;
+            emojiEl.classList.add('flower-pop');
+
+            const box = document.getElementById('flower-compliment-box');
+            box.textContent = `${meadowFlowersData[idx].icon} "${meadowFlowersData[idx].msg}"`;
+
+            const rect = btnEl.getBoundingClientRect();
+            const cx = event?.clientX || (rect.left + rect.width / 2);
+            const cy = event?.clientY || (rect.top + rect.height / 2);
+            spawnParticlesAt(cx, cy, 7, [meadowFlowersData[idx].icon, '💖', '✨', '🌸']);
+        }
+
+        function bloomAllGardenFlowers() {
+            const buttons = document.querySelectorAll('.meadow-flower-btn');
+            buttons.forEach((btn, i) => {
+                setTimeout(() => {
+                    bloomSingleFlower(i, btn, null);
+                }, i * 120);
+            });
+        }
+
+        /* ----------------------------------------------------------
+         * RANDOM PEEK-A-BOO SVG ANIMALS FROM 4 SCREEN EDGES (~9s)
+         * ---------------------------------------------------------- */
+        const edgeCritterSVGs = {
+            cat: `<svg viewBox="0 0 64 64" class="w-11 h-11"><path d="M14 28 L12 10 L26 20 Z" fill="#F7E4D8" stroke="#5A3E38" stroke-width="2.5"/><path d="M50 28 L52 10 L38 20 Z" fill="#F7E4D8" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="32" cy="36" rx="22" ry="18" fill="#FDF6F0" stroke="#5A3E38" stroke-width="2.5"/><circle cx="24" cy="34" r="2.8" fill="#5A3E38"/><circle cx="40" cy="34" r="2.8" fill="#5A3E38"/><ellipse cx="19" cy="39" rx="3.5" ry="2" fill="#E8B4A2"/><ellipse cx="45" cy="39" rx="3.5" ry="2" fill="#E8B4A2"/><path d="M29 38 Q32 41 35 38" stroke="#5A3E38" stroke-width="2" fill="none"/></svg>`,
+            bunny: `<svg viewBox="0 0 64 64" class="w-11 h-11"><ellipse cx="23" cy="17" rx="5" ry="13" fill="#FDF6F0" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="41" cy="17" rx="5" ry="13" fill="#FDF6F0" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="32" cy="39" rx="20" ry="17" fill="#FDF6F0" stroke="#5A3E38" stroke-width="2.5"/><circle cx="25" cy="36" r="2.8" fill="#5A3E38"/><circle cx="39" cy="36" r="2.8" fill="#5A3E38"/><ellipse cx="20" cy="41" rx="3.5" ry="2" fill="#E8B4A2"/><ellipse cx="44" cy="41" rx="3.5" ry="2" fill="#E8B4A2"/></svg>`,
+            shiba: `<svg viewBox="0 0 64 64" class="w-11 h-11"><path d="M14 26 L12 10 L27 19 Z" fill="#E6B89C" stroke="#5A3E38" stroke-width="2.5"/><path d="M50 26 L52 10 L37 19 Z" fill="#E6B89C" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="32" cy="36" rx="21" ry="18" fill="#E6B89C" stroke="#5A3E38" stroke-width="2.5"/><circle cx="24" cy="34" r="2.8" fill="#5A3E38"/><circle cx="40" cy="34" r="2.8" fill="#5A3E38"/><ellipse cx="32" cy="38" rx="3" ry="2" fill="#5A3E38"/></svg>`,
+            bear: `<svg viewBox="0 0 64 64" class="w-11 h-11"><circle cx="17" cy="18" r="7" fill="#D4A383" stroke="#5A3E38" stroke-width="2.5"/><circle cx="47" cy="18" r="7" fill="#D4A383" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="32" cy="36" rx="21" ry="18" fill="#D4A383" stroke="#5A3E38" stroke-width="2.5"/><ellipse cx="32" cy="40" rx="8" ry="6" fill="#FDF6F0"/><circle cx="24" cy="32" r="2.8" fill="#5A3E38"/><circle cx="40" cy="32" r="2.8" fill="#5A3E38"/></svg>`,
+            duck: `<svg viewBox="0 0 64 64" class="w-11 h-11"><ellipse cx="32" cy="37" rx="20" ry="18" fill="#FAD2D8" stroke="#5A3E38" stroke-width="2.5"/><circle cx="24" cy="33" r="2.8" fill="#5A3E38"/><circle cx="40" cy="33" r="2.8" fill="#5A3E38"/><ellipse cx="32" cy="39" rx="6.5" ry="3.5" fill="#F4A261" stroke="#5A3E38" stroke-width="2"/></svg>`
+        };
+
+        const edgeCrittersPool = [
+            { name: 'Mèo Kem Bơ', svg: edgeCritterSVGs.cat, msg: 'Ú òa! Chui ra chúc các chị đẹp hôm nay trẻ trung, xinh lung linh! 🌸' },
+            { name: 'Gấu Bông Mật', svg: edgeCritterSVGs.bear, msg: 'Nhắc nhẹ chị yêu uống nước, giữ sức khỏe và nhớ kèo dẫn em đi ăn ngon nha! 🧋' },
+            { name: 'Cún Shiba', svg: edgeCritterSVGs.shiba, msg: 'Cảm ơn các chị vì luôn thương yêu và che chở cho đứa em này! 💖' },
+            { name: 'Vịt Phấn Hồng', svg: edgeCritterSVGs.duck, msg: 'Quạc quạc! Chúc các chị yêu tiền vào như nước, công việc thuận buồm xuôi gió! 💸' },
+            { name: 'Thỏ Đào Sữa', svg: edgeCritterSVGs.bunny, msg: 'Chúc chị đẹp cả ngày cười tươi rói, mọi mệt mỏi đều tan biến hết nha! ✨' }
+        ];
+
+        function scheduleNextEdgeCritter() {
+            clearTimeout(edgeCritterTimeout);
+            const nextDelay = 8500 + Math.random() * 1500; // ~9 seconds
+            edgeCritterTimeout = setTimeout(() => {
+                triggerRandomEdgeCritter(false);
+            }, nextDelay);
+        }
+
+        function triggerRandomEdgeCritter(isManual = false) {
+            const container = document.getElementById('edge-critter-container');
+            const inner = document.getElementById('edge-critter-inner');
+
+            const critter = edgeCrittersPool[Math.floor(Math.random() * edgeCrittersPool.length)];
+            const edges = ['left', 'right', 'bottom', 'top'];
+            const edge = edges[Math.floor(Math.random() * edges.length)];
+
+            container.style.top = '';
+            container.style.bottom = '';
+            container.style.left = '';
+            container.style.right = '';
+            container.style.transform = '';
+
+            const avatarHTML = `
+                <div class="w-14 h-14 rounded-2xl bg-cream border-2 border-blush shadow-lg flex items-center justify-center shrink-0 animate-bounce">
+                    ${critter.svg}
+                </div>
+            `;
+
+            if (edge === 'left') {
+                const topPercent = 25 + Math.floor(Math.random() * 50);
+                container.style.top = `${topPercent}%`;
+                container.style.left = '12px';
+                inner.className = 'flex items-center gap-2.5';
+                inner.innerHTML = `
+                    ${avatarHTML}
+                    <div class="glass-pill px-4 py-2.5 max-w-[235px] sm:max-w-xs border border-blush shadow-lg">
+                        <p class="text-[11px] font-bold text-deepRose">${critter.name} ló ra từ mép trái:</p>
+                        <p class="text-xs text-cocoa font-medium leading-snug">${critter.msg}</p>
+                    </div>
+                `;
+            } else if (edge === 'right') {
+                const topPercent = 25 + Math.floor(Math.random() * 50);
+                container.style.top = `${topPercent}%`;
+                container.style.right = '12px';
+                inner.className = 'flex flex-row-reverse items-center gap-2.5';
+                inner.innerHTML = `
+                    ${avatarHTML}
+                    <div class="glass-pill px-4 py-2.5 max-w-[235px] sm:max-w-xs border border-blush shadow-lg text-right">
+                        <p class="text-[11px] font-bold text-deepRose">${critter.name} ú òa từ mép phải:</p>
+                        <p class="text-xs text-cocoa font-medium leading-snug">${critter.msg}</p>
+                    </div>
+                `;
+            } else if (edge === 'top') {
+                const leftPercent = 18 + Math.floor(Math.random() * 50);
+                container.style.top = '14px';
+                container.style.left = `${leftPercent}%`;
+                inner.className = 'flex items-center gap-2.5';
+                inner.innerHTML = `
+                    ${avatarHTML}
+                    <div class="glass-pill px-4 py-2.5 max-w-[235px] sm:max-w-xs border border-blush shadow-lg">
+                        <p class="text-[11px] font-bold text-deepRose">${critter.name} đu từ mép trên xuống:</p>
+                        <p class="text-xs text-cocoa font-medium leading-snug">${critter.msg}</p>
+                    </div>
+                `;
+            } else {
+                const leftPercent = 15 + Math.floor(Math.random() * 55);
+                container.style.bottom = '14px';
+                container.style.left = `${leftPercent}%`;
+                inner.className = 'flex items-center gap-2.5';
+                inner.innerHTML = `
+                    ${avatarHTML}
+                    <div class="glass-pill px-4 py-2.5 max-w-[235px] sm:max-w-xs border border-blush shadow-lg">
+                        <p class="text-[11px] font-bold text-deepRose">${critter.name} ngoi lên từ mép dưới:</p>
+                        <p class="text-xs text-cocoa font-medium leading-snug">${critter.msg}</p>
+                    </div>
+                `;
+            }
+
+            container.classList.remove('opacity-0', 'pointer-events-none');
+
+            setTimeout(() => {
+                hideEdgeCritter();
+            }, 4800);
+
+            scheduleNextEdgeCritter();
+        }
+
+        function hideEdgeCritter() {
+            const container = document.getElementById('edge-critter-container');
+            container.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function pokeEdgeCritter(e) {
+            e.stopPropagation();
+            addLoveScore(5);
+            spawnParticlesAt(e.clientX || window.innerWidth / 2, e.clientY || window.innerHeight / 2, 10, ['💖', '✨', '🌸', '🌷']);
+            hideEdgeCritter();
+        }
+
+        /* ----------------------------------------------------------
+         * STAGE 2: FLOWER BASKET & 30 TAILORED PROPHECIES FOR OLDER SISTERS
+         * ---------------------------------------------------------- */
+        const flowerBasketCatalog = [
+            {
+                id: 'peach_pink',
+                name: 'Hoa Hồng Đào',
+                colorLabel: 'Trẻ Trung, Nhan Sắc & Ngọt Ngào',
+                emoji: '🌸',
+                bgClass: 'from-[#FFF2EE] to-[#F7D7CD]',
+                borderClass: 'border-[#E8B4A2]',
+                prophecies: [
+                    'Quẻ Hoa Hồng Đào: Chúc chị yêu nhan sắc ngày càng thăng hạng, da dẻ hồng hào mịn màng, đi đâu ai cũng khen trẻ hơn tuổi thật!',
+                    'Quẻ Hoa Hồng Đào: Sắp tới chị sẽ nhận được một món quà bất ngờ hoặc một lời khen ngọt ngào làm chị vui âm ỉ suốt cả tuần!',
+                    'Quẻ Hoa Hồng Đào: Mọi chuyện phiền muộn đều lùi xa, nhường chỗ cho những ngày thảnh thơi đi làm đẹp, shopping và ăn ngon cùng em!',
+                    'Quẻ Hoa Hồng Đào: Sự dịu dàng, tinh tế và tốt bụng của chị chính là thỏi nam châm thu hút muôn vàn yêu thương và may mắn!',
+                    'Quẻ Hoa Hồng Đào: Chị yêu cứ việc giữ mãi nụ cười rạng rỡ trên môi, cả thế giới (và đứa em này) luôn yêu thương chị vô điều kiện!'
+                ]
+            },
+            {
+                id: 'ruby_red',
+                name: 'Hoa Đỏ Ruby',
+                colorLabel: 'May Mắn Rực Rỡ & Quyền Lực',
+                emoji: '🌹',
+                bgClass: 'from-[#FFE8E5] to-[#F8C5BE]',
+                borderClass: 'border-[#D48472]',
+                prophecies: [
+                    'Quẻ Hoa Đỏ Ruby: Vận đỏ đang chiếu rực rỡ! Chúc chị yêu làm việc gì cũng suôn sẻ, đánh đâu thắng đó,气 chất ngời ngời!',
+                    'Quẻ Hoa Đỏ Ruby: Sắp tới tài chính của chị sẽ bùng nổ mạnh mẽ, tiền thưởng và lộc lá cứ thế nối đuôi nhau vào tài khoản!',
+                    'Quẻ Hoa Đỏ Ruby: Trong công việc cũng như cuộc sống, chị luôn là "nữ hoàng" bản lĩnh, thông minh và được mọi người nể phục!',
+                    'Quẻ Hoa Đỏ Ruby: Một cơ hội tuyệt vời hoặc một tin vui lớn về công việc/tài lộc đang trên đường gõ cửa tìm chị đó!',
+                    'Quẻ Hoa Đỏ Ruby: Chúc chị yêu lúc nào cũng rực rỡ, nhiệt huyết và tràn đầy năng lượng — nhớ trích một phần lộc dẫn em đi ăn nha!'
+                ]
+            },
+            {
+                id: 'sunny_yellow',
+                name: 'Hoa Vàng Nắng Mai',
+                colorLabel: 'Tài Lộc Dồi Dào & Thành Công',
+                emoji: '🌻',
+                bgClass: 'from-[#FFFBEB] to-[#FDE68A]',
+                borderClass: 'border-[#EAB308]',
+                prophecies: [
+                    'Quẻ Hoa Vàng Nắng Mai: Thần Tài đang mỉm cười với chị yêu! Sắp tới hầu bao rủng rỉnh, tha hồ chốt đơn không cần nhìn giá!',
+                    'Quẻ Hoa Vàng Nắng Mai: Mọi dự định và mục tiêu chị đang ấp ủ sẽ sớm đơm hoa kết trái ngọt ngào vượt ngoài mong đợi!',
+                    'Quẻ Hoa Vàng Nắng Mai: Năng lượng ấm áp như nắng sớm của chị giúp cả gia đình mình lúc nào cũng tràn ngập tiếng cười!',
+                    'Quẻ Hoa Vàng Nắng Mai: Công việc tuần tới trôi chảy êm ru, sếp quý đồng nghiệp thương, không có chút áp lực nào làm khó được chị!',
+                    'Quẻ Hoa Vàng Nắng Mai: Chúc chị gái của em sớm thành phú bà giàu sang phú quý để đứa em này được thơm lây dài dài!'
+                ]
+            },
+            {
+                id: 'lavender_purple',
+                name: 'Hoa Tím Lavender',
+                colorLabel: 'Thảnh Thơi, Lãng Mạn & Như Ý',
+                emoji: '🪻',
+                bgClass: 'from-[#F5F3FF] to-[#DDD6FE]',
+                borderClass: 'border-[#A78BFA]',
+                prophecies: [
+                    'Quẻ Hoa Tím Lavender: Chúc chị yêu có những ngày thật chill, tâm hồn thư thái, ngủ ngon giấc và tận hưởng trọn vẹn từng khoảnh khắc!',
+                    'Quẻ Hoa Tím Lavender: Một điều ước thầm kín trong lòng chị sắp được vũ trụ lắng nghe và biến thành hiện thực một cách diệu kỳ!',
+                    'Quẻ Hoa Tím Lavender: Sự duyên dáng và sâu sắc của chị khiến bất kỳ ai tiếp xúc cũng cảm thấy quý mến và trân trọng!',
+                    'Quẻ Hoa Tím Lavender: Sắp tới chị sẽ có một buổi hẹn hò hoặc tụ tập siêu vui, nạp đầy 100% vitamin hạnh phúc!',
+                    'Quẻ Hoa Tím Lavender: Dù cuộc sống bên ngoài có bận rộn thế nào, về nhà chị vẫn luôn có đứa em ngoan này sẵn sàng pha trò cho chị cười!'
+                ]
+            },
+            {
+                id: 'pure_white',
+                name: 'Hoa Trắng Tinh Khôi',
+                colorLabel: 'Bình An, Sức Khỏe & Hạnh Phúc',
+                emoji: '🌼',
+                bgClass: 'from-[#FFFFFF] to-[#F5E8E0]',
+                borderClass: 'border-[#D48472]',
+                prophecies: [
+                    'Quẻ Hoa Trắng Tinh Khôi: Chúc chị yêu luôn bình an, sức khỏe dồi dào, tâm hồn nhẹ nhàng trong trẻo như đóa hoa buổi sớm!',
+                    'Quẻ Hoa Trắng Tinh Khôi: Mọi âu lo hay mệt mỏi cũ đều sẽ tan biến, mở ra một hành trình mới toàn niềm vui và tiếng cười cho chị!',
+                    'Quẻ Hoa Trắng Tinh Khôi: Chị sống chân thành, hiếu thảo và thương em nên ông trời chắc chắn sẽ ban tặng cho chị thật nhiều phước lành!',
+                    'Quẻ Hoa Trắng Tinh Khôi: Những ngày sắp tới của chị sẽ êm đềm, thuận lợi từ chuyện nhỏ đến chuyện lớn, vạn sự như ý!',
+                    'Quẻ Hoa Trắng Tinh Khôi: Cảm ơn chị vì đã luôn là người chị cả/chị gái tuyệt vời nhất — em chúc chị mỗi ngày đều là một ngày hạnh phúc!'
+                ]
+            },
+            {
+                id: 'mint_blue',
+                name: 'Hoa Xanh Ngọc Bích',
+                colorLabel: 'Tươi Mới, Du Lịch & Khởi Đầu Mới',
+                emoji: '💠',
+                bgClass: 'from-[#ECFEFF] to-[#A7F3D0]',
+                borderClass: 'border-[#34D399]',
+                prophecies: [
+                    'Quẻ Hoa Xanh Ngọc Bích: Sắp tới chị yêu sẽ có một chuyến đi chơi xa hoặc kỳ nghỉ dưỡng cực kỳ sảng khoái và đáng nhớ!',
+                    'Quẻ Hoa Xanh Ngọc Bích: Một làn gió mới mát lành đang thổi tới, mang theo những cơ hội tốt đẹp và nguồn cảm hứng dồi dào cho chị!',
+                    'Quẻ Hoa Xanh Ngọc Bích: Mọi nút thắt hay công việc tồn đọng đều sẽ được giải quyết gọn gàng, nhẹ tênh trong tích tắc!',
+                    'Quẻ Hoa Xanh Ngọc Bích: Lộc ăn uống và lộc đi chơi đang vẫy gọi chị yêu — nhớ rủ đứa em đáng yêu này đi ké với nha!',
+                    'Quẻ Hoa Xanh Ngọc Bích: Tình chị em nhà mình mãi bền chặt, xanh tươi và lấp lánh như viên ngọc bích quý giá nhất!'
+                ]
+            }
+        ];
+
+        function renderFlowerBasket() {
+            const grid = document.getElementById('flower-basket-grid');
+            grid.innerHTML = flowerBasketCatalog.map((item, index) => `
+                <button onclick="pickFlowerFromBasket(${index}, this, event); event.stopPropagation();" class="flower-basket-card group bg-gradient-to-br ${item.bgClass} border-2 ${item.borderClass} rounded-[24px] p-4 sm:p-5 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col items-center justify-between">
+                    <div class="w-16 h-16 rounded-full bg-white/85 flex items-center justify-center text-4xl shadow-sm mb-2 group-hover:scale-110 transition-transform">
+                        ${item.emoji}
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-base sm:text-lg text-cocoa">${item.name}</h4>
+                        <p class="text-xs text-softCocoa font-medium mt-0.5">${item.colorLabel}</p>
+                    </div>
+                    <span class="mt-3 inline-block px-3 py-1 rounded-full bg-white/90 text-cocoa text-[11px] font-semibold shadow-sm group-hover:bg-cocoa group-hover:text-white transition">
+                        Chọn sắc hoa này 🔮
+                    </span>
+                </button>
+            `).join('');
+        }
+
+        function pickFlowerFromBasket(index, btnEl, event) {
+            selectedFlowerIndex = index;
+            addLoveScore(12);
+
+            if (event) {
+                spawnParticlesAt(event.clientX, event.clientY, 12, [flowerBasketCatalog[index].emoji, '💖', '✨', '🔮']);
+            }
+
+            displayRandomProphecyForFlower(index);
+
+            const resultContainer = document.getElementById('prophecy-result-container');
+            resultContainer.classList.remove('hidden');
+            setTimeout(() => {
+                resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
+
+        function displayRandomProphecyForFlower(index) {
+            const flower = flowerBasketCatalog[index];
+            const pool = flower.prophecies;
+            let randIdx = Math.floor(Math.random() * pool.length);
+
+            if (lastProphecyIndexByFlower[index] !== undefined && pool.length > 1) {
+                while (randIdx === lastProphecyIndexByFlower[index]) {
+                    randIdx = Math.floor(Math.random() * pool.length);
+                }
+            }
+            lastProphecyIndexByFlower[index] = randIdx;
+
+            const iconEl = document.getElementById('prophecy-flower-icon');
+            const badgeEl = document.getElementById('prophecy-flower-badge');
+            const titleEl = document.getElementById('prophecy-flower-title');
+            const textEl = document.getElementById('prophecy-text');
+
+            iconEl.textContent = flower.emoji;
+            iconEl.classList.remove('flower-pop');
+            void iconEl.offsetWidth;
+            iconEl.classList.add('flower-pop');
+
+            badgeEl.textContent = `Quẻ Tiên Tri Từ ${flower.name}`;
+            titleEl.textContent = flower.colorLabel;
+            textEl.textContent = `"${pool[randIdx]}"`;
+        }
+
+        function rerollCurrentFlowerProphecy() {
+            displayRandomProphecyForFlower(selectedFlowerIndex);
+            showerLoveHearts();
+        }
+
+        /* ----------------------------------------------------------
+         * STAGE 3: GRAND FINALE MAGIC MIRROR REVEAL & SNAPSHOT
+         * ---------------------------------------------------------- */
+        function revealMagicMirror() {
+            const questionView = document.getElementById('finale-question-view');
+            const countdownView = document.getElementById('finale-countdown-view');
+            const mirrorView = document.getElementById('finale-mirror-view');
+            const countdownNum = document.getElementById('countdown-number');
+
+            questionView.classList.add('hidden');
+            countdownView.classList.remove('hidden');
+
+            let count = 3;
+            countdownNum.textContent = count;
+
+            const timer = setInterval(() => {
+                count--;
+                if (count > 0) {
+                    countdownNum.textContent = count;
+                } else {
+                    clearInterval(timer);
+                    countdownView.classList.add('hidden');
+                    mirrorView.classList.remove('hidden');
+                    attachStreamToMirrorVideo();
+                    addLoveScore(100);
+                    showerLoveHearts();
+                }
+            }, 750);
+        }
+
+        const mirrorThemes = [
+            {
+                badge: '🌸👑 Chị Đẹp Rạng Rỡ Nhất Hôm Nay 👑🌸',
+                tl: '🌷✨',
+                tr: '✨🌷',
+                caption: '"Chị yêu của em xinh đẹp và trẻ trung số 1! ✨💖"'
+            },
+            {
+                badge: '👑💎 Nữ Hoàng Nhan Sắc & Tài Lộc 💎👑',
+                tl: '👑💖',
+                tr: '💖👑',
+                caption: '"Vừa xinh đẹp vừa giàu sang chính là chị gái trong gương! 🌸"'
+            },
+            {
+                badge: '💖🌷 Người Chị Tuyệt Vời Nhất Trên Đời 🌷💖',
+                tl: '🌸🦋',
+                tr: '🦋🌸',
+                caption: '"Cảm ơn chị yêu vì đã luôn là chị gái tuyệt vời nhất của em! 💝"'
+            }
+        ];
+
+        function changeMirrorTheme(themeIndex) {
+            currentMirrorTheme = themeIndex;
+            const t = mirrorThemes[themeIndex];
+            document.getElementById('mirror-crown-badge').innerHTML = `<span>${t.badge}</span>`;
+            document.getElementById('decor-tl').textContent = t.tl;
+            document.getElementById('decor-tr').textContent = t.tr;
+            document.getElementById('mirror-caption-overlay').textContent = t.caption;
+            showerLoveHearts();
+        }
+
+        function captureMirrorSnapshot() {
+            const videoEl = document.getElementById('mirror-video-el');
+            const canvas = document.getElementById('snapshot-canvas');
+            const resultBox = document.getElementById('snapshot-result-box');
+            const downloadLink = document.getElementById('download-snapshot-link');
+
+            const width = 600;
+            const height = 740;
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+
+            // Soft peach & blush gradient background
+            const grad = ctx.createLinearGradient(0, 0, width, height);
+            grad.addColorStop(0, '#FDF6F0');
+            grad.addColorStop(0.5, '#F7E4D8');
+            grad.addColorStop(1, '#E8B4A2');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, width, height);
+
+            const pad = 34;
+            const photoW = width - pad * 2;
+            const photoH = 510;
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.roundRect(pad, 80, photoW, photoH, 26);
+            ctx.clip();
+
+            if (magicStream && !videoEl.classList.contains('hidden') && videoEl.readyState >= 2) {
+                ctx.translate(pad + photoW, 80);
+                ctx.scale(-1, 1);
+
+                const vw = videoEl.videoWidth || 640;
+                const vh = videoEl.videoHeight || 640;
+                const scale = Math.max(photoW / vw, photoH / vh);
+                const sw = vw * scale;
+                const sh = vh * scale;
+                const dx = (photoW - sw) / 2;
+                const dy = (photoH - sh) / 2;
+                ctx.drawImage(videoEl, dx, dy, sw, sh);
+            } else if (uploadedMirrorImage) {
+                const iw = uploadedMirrorImage.width || 640;
+                const ih = uploadedMirrorImage.height || 640;
+                const scale = Math.max(photoW / iw, photoH / ih);
+                const sw = iw * scale;
+                const sh = ih * scale;
+                const dx = pad + (photoW - sw) / 2;
+                const dy = 80 + (photoH - sh) / 2;
+                ctx.drawImage(uploadedMirrorImage, dx, dy, sw, sh);
+            } else {
+                ctx.fillStyle = '#5A3E38';
+                ctx.fillRect(pad, 80, photoW, photoH);
+                ctx.fillStyle = '#FDF6F0';
+                ctx.font = 'bold 25px "Be Vietnam Pro", sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('👑 Chị Yêu Đẹp Nhất Hôm Nay 👑', width / 2, 335);
+            }
+            ctx.restore();
+
+            // White frame border
+            ctx.strokeStyle = '#FFFFFF';
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.roundRect(pad, 80, photoW, photoH, 26);
+            ctx.stroke();
+
+            // Draw Floral Crown at Top of Photo Frame
+            ctx.save();
+            ctx.fillStyle = '#D48472';
+            ctx.beginPath();
+            ctx.arc(width / 2, 76, 16, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#E8B4A2';
+            ctx.beginPath();
+            ctx.arc(width / 2 - 34, 80, 12, 0, Math.PI * 2);
+            ctx.arc(width / 2 + 34, 80, 12, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#FDF6F0';
+            ctx.beginPath();
+            ctx.arc(width / 2, 76, 6, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+
+            // Header & Footer Captions
+            ctx.fillStyle = '#5A3E38';
+            ctx.font = 'bold 21px "Playfair Display", serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('🌷 Bạn Có Biết Ai Đẹp Nhất Hôm Nay Không? 🌷', width / 2, 42);
+
+            ctx.fillStyle = '#5A3E38';
+            ctx.font = 'italic 19px "Playfair Display", serif';
+            ctx.fillText(mirrorThemes[currentMirrorTheme].caption, width / 2, 638);
+
+            ctx.fillStyle = '#B86452';
+            ctx.font = '600 15px "Be Vietnam Pro", sans-serif';
+            ctx.fillText('Chính là CHỊ YÊU đó — Từ đứa em ngoan của chị ✨👑💖', width / 2, 680);
+
+            try {
+                downloadLink.href = canvas.toDataURL('image/png');
+            } catch (e) {
+                console.warn('Canvas export notice:', e);
+            }
+
+            resultBox.classList.remove('hidden');
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showerLoveHearts();
+        }
+
+        function showFloatingToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 glass-pill px-5 py-3 text-xs sm:text-sm font-semibold text-cocoa shadow-xl border border-blush max-w-md text-center';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3800);
+        }
+
+        /* ----------------------------------------------------------
+         * AMBIENT FLOATING PETALS BACKGROUND CANVAS
+         * ---------------------------------------------------------- */
+        function initAmbientCanvas() {
+            const canvas = document.getElementById('ambient-canvas');
+            const ctx = canvas.getContext('2d');
+            let w = (canvas.width = window.innerWidth);
+            let h = (canvas.height = window.innerHeight);
+
+            window.addEventListener('resize', () => {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            });
+
+            const petals = Array.from({ length: 24 }, () => ({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                r: 4 + Math.random() * 6,
+                vy: 0.4 + Math.random() * 0.65,
+                vx: (Math.random() - 0.5) * 0.5,
+                angle: Math.random() * Math.PI * 2,
+                spin: (Math.random() - 0.5) * 0.02,
+                color: Math.random() > 0.5 ? 'rgba(232, 180, 162, 0.45)' : 'rgba(212, 132, 114, 0.35)'
+            }));
+
+            function animate() {
+                ctx.clearRect(0, 0, w, h);
+                for (const p of petals) {
+                    p.y += p.vy;
+                    p.x += p.vx + Math.sin(p.angle) * 0.3;
+                    p.angle += p.spin;
+
+                    if (p.y > h + 20) {
+                        p.y = -15;
+                        p.x = Math.random() * w;
+                    }
+
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate(p.angle);
+                    ctx.fillStyle = p.color;
+                    ctx.beginPath();
+                    ctx.ellipse(0, 0, p.r, p.r * 0.6, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        /* ----------------------------------------------------------
+         * INITIALIZE ON WINDOW LOAD
+         * ---------------------------------------------------------- */
+        window.onload = function () {
+            renderInteractiveMeadow();
+            renderFlowerBasket();
+            initAmbientCanvas();
+            scheduleNextEdgeCritter();
+        };
+    </script>
+</body>
+</html>
